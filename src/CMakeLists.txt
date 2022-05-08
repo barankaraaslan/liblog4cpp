@@ -6,8 +6,6 @@ add_library(log4cpp)
 file(GLOB_RECURSE sources CONFIGURE_DEPENDS *[!.test].cpp)
 file(GLOB_RECURSE test_sources CONFIGURE_DEPENDS *.test.cpp)
 
-message(${sources})
-message(${test_sources})
 target_sources(log4cpp PUBLIC ${sources})
 # Note: If there are new header files for the public api, add those filenames to command below
 target_sources(log4cpp PUBLIC FILE_SET HEADERS FILES 
