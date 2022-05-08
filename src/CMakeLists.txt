@@ -19,6 +19,5 @@ add_test(NAME can_run COMMAND log4cpp_test)
 add_test(NAME output_check COMMAND log4cpp_test)
 set_tests_properties(output_check PROPERTIES PASS_REGULAR_EXPRESSION "log4cpp::Hello World!")
 
-install(TARGETS log4cpp)
 install(TARGETS log4cpp FILE_SET HEADERS)
 include(CPack)
